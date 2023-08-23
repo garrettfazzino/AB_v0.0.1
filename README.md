@@ -3,12 +3,12 @@ A simple solution for music producers to getting your beats out to Youtube passi
 
 # Environment Setup
 In order to set your environment up to run the code here, first install all requirements:
-'''
+```shell
 pip3 install -r requirements.txt
-'''
+```
 
 Rename example.env to .env and edit the variables appropriately.
-'''
+```
 YOUTUBE_API_SECRET= Path to file where your .json file lives
 YOUTUBE_OAUTH= Path to the downloaded OAuth .json file lives
 YOUTUBE_CHANNEL_ID= ID of your personal youtube channel
@@ -16,7 +16,7 @@ GOOGLE_STORAGE_KEY= API access to GCP project containing storage bucket
 GCS_BUCKET_NAME= Name of the storage bucket where your audio files live
 TOKEN_PICKLE= Path to token.pickle file if exists already
 BACKGROUND_VIDEO_PATH= Path to the desired background video of your choice
-'''
+```
 
 # How does it work?
 AutoBeats is made to be a background uploader which takes your audio files from the cloud, downloads them to your disk, concatenates them with a video of your choosing for background viewing, and then uploads it to youtube with the correct category, a unique name, and other identifying factors for the upload. 
